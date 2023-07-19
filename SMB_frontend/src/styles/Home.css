@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27');
+
+.aboutBody{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:150px;
+    font-family: Abel;
+}
+.aboutBody button{
+    background-color: #240f0e;
+    border-color: #716161;
+    border-radius: 5px;
+    color: #e6d8d9;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.editButtons button:hover {
+    background-color: #655b5b;
+    cursor: pointer;
+}
+
+.editButtons{
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.samImg{
+    width:500px;
+    height: 520px;
+    object-fit: cover;
+}
+
+h1{
+    font-weight: 400;
+    font-family: Abel;
+    font-size: 48px;
+}
+h2{
+    margin-top:50px;
+    font-weight: 300;
+}
+h3{
+    font-size: xx-large;
+}
+
+h5 {
+	font-size: 15px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0;
+	color: #fff;
+	text-align: center
+}
+.clientDesc{
+    margin-top: -5px;
+    font-size: 32px;
+    font-family: Abel;
+    white-space: pre-line;
+}
+
+
+.player-wrapper {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.upcomingProjects{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:50px;
+    justify-content:center;
+    width: 100%
+}
+
+.home .reel{
+    display: flex;
+    gap:50px;
+    overflow: hidden;
+    max-width: 1960px;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+
+.home .reelText{
+    font-size: 48px;
+    font-family: Abel;
+   
+}
+.home .topReel{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.page {
+    min-height: 70vh;
+    margin:auto;
+    max-width: 2160px;
+    width: 100%;
+}
+
+.page-container {
+    margin: 100px;
+}
+
+
+.settings-title {
+	font-size: 20px;
+	font-weight: 800;
+	margin: 0;
+	margin-bottom: 6px;
+    text-align: center;
+
+}
+
+.arrows {
+    cursor: pointer;
+    font-size: xx-large;
+}
+.aboutBody .save{
+    padding-left: 20px;
+    
+}
+
+.scroll-icon-left {
+    margin-right: 18px;
+}
+
+.clientPhoto-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.editContent-clientPhoto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.textarea-container-home {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.textarea-container-home textarea {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Abel;
+    font-size: 32px;
+    padding: 10px;
+    resize: vertical;
+    transition: all .3s;
+    width: 1300px;
+    height: 250px;
+}
+
+.home-quote {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstline {
+    position: relative;
+    padding-left: 300px;
+    font-size: 40px;
+}
+
+.secondline-container {
+    display: flex;
+    justify-content: center;
+}
+
+.secondline {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ba2f3a;
+    font-family: sans-serif;
+}
+
+.second-end {
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+.thirdline {
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 300px;
+}
+
+@media only screen and (max-width: 2160px) {
+    .player-wrapper {
+        height: calc(30.25vw);
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    .textarea-container-home textarea {
+        width: 1000px;
+    }
+    .firstline {
+        font-size: 30px;
+        padding-left: 250px;
+    }
+    .thirdline {
+        font-size: 30px;
+        padding-right: 250px;
+    }
+    .secondline, .second-end {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .home .reelText, h1 {
+        font-size: 42px;
+    }
+    .clientDesc {
+        font-size: 25px;
+    }
+    .samImg {
+        height: 420px;
+        width: 400px;
+    }
+    .clientPhoto-container {
+        margin-left: 50px;
+    }
+    .arrows {
+        font-size: x-large;
+    }
+    .textarea-container-home textarea {
+        width: 850px;
+        height: 200px;
+        font-size: 25px;
+    }
+    .firstline, .thirdline {
+        font-size: 25px;
+    }
+    .secondline, .second-end {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .home .reel {
+        gap: 40px;
+    }
+    .home .reelText, h1 {
+        font-size: 39px;
+    }
+    .aboutBody button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+    .textarea-container-home textarea {
+        width: 750px;
+    }
+    .firstline, .thirdline {
+        font-size: 23px;
+    }
+    .secondline, .second-end {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .home .reelText, h1 {
+        font-size: 34px;
+    }
+    .clientDesc {
+        font-size: 20px;
+    }
+    .samImg {
+        height: 370px;
+        width: 350px;
+    }
+    .home .reel {
+        gap: 30px;
+    }
+    .textarea-container-home textarea {
+        width: 600px;
+        height: 150px;
+        font-size: 20px;
+    }
+    .textarea-container-home {
+        margin-bottom: 14px;
+    }
+    .firstline {
+        font-size: 20px;
+        padding-left: 200px;
+    }
+    .thirdline {
+        font-size: 20px;
+        padding-right: 200px;
+    }
+    .secondline, .second-end {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutBody button {
+        font-size: 12px;
+    }
+    .firstline, .thirdline {
+        font-size: 18px;
+    }
+    .secondline, .second-end {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .home .reelText, h1 {
+        font-size: 29px;
+    }
+    .clientDesc {
+        font-size: 17px;
+    }
+    .samImg {
+        height: 310px;
+        width: 290px;
+    }
+    .arrows {
+        font-size: large;
+    }
+    .textarea-container-home textarea {
+        font-size: 17px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .home .reelText, h1 {
+        font-size: 26px;
+    }
+    .clientDesc {
+        font-size: 15px;
+    }
+    .samImg {
+        height: 260px;
+        width: 240px;
+    }
+    .scroll-icon-left {
+        margin-right: 10px;
+    }
+    .aboutBody button {
+        font-size: 9px;
+        padding: 5px 15px;
+    }
+    .textarea-container-home textarea {
+        font-size: 15px;
+        width: 450px;
+        height: 120px;
+    }
+    .editContent-clientPhoto {
+        margin-top: 10px;
+    }
+    .firstline {
+        font-size: 15px;
+        padding-left: 150px;
+    }
+    .thirdline {
+        font-size: 15px;
+        padding-right: 150px;
+    }
+    .secondline, .second-end {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .home .reelText, h1 {
+        font-size: 23px;
+    }
+    .clientDesc {
+        font-size: 13px;
+    }
+    .aboutBody {
+        margin-bottom: 100px;
+    }
+    .samImg {
+        height: 230px;
+        width: 210px;
+    }
+    .arrows {
+        font-size: medium;
+    }
+    .aboutBody button {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+    .textarea-container-home textarea {
+        font-size: 13px;
+        width: 400px;
+    }
+    .textarea-container-home {
+        margin-bottom: 8px;
+    }
+    .page-container {
+        margin: 50px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .home .reelText, h1 {
+        font-size: 19px;
+    }
+    .clientDesc {
+        font-size: 11px;
+    }
+    .samImg {
+        height: 200px;
+        width: 180px;
+    }
+    .arrows {
+        font-size: small;
+    }
+    .home .reel {
+        gap: 20px;
+    }
+    .textarea-container-home textarea {
+        font-size: 11px;
+        height: 100px;
+    }
+    .firstline, .thirdline {
+        font-size: 11px;
+    }
+    .secondline, .second-end {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home .reelText, h1 {
+        font-size: 14px;
+    }
+    .clientDesc {
+        font-size: 9px;
+    }
+    .samImg {
+        height: 180px;
+        width: 160px;
+    }
+    .arrows {
+        font-size: x-small;
+    }
+    .textarea-container-home textarea {
+        font-size: 9px;
+        width: 270px;
+        height: 80px;
+    }
+    .aboutBody button {
+        font-size: 5px;
+        padding: 3px 10px;
+    }
+    .firstline {
+        font-size: 9px;
+        padding-left: 95px;
+    }
+    .thirdline {
+        font-size: 9px;
+        padding-right: 95px;
+    }
+    .secondline, .second-end {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home .reelText, h1 {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .clientDesc {
+        font-size: 7px;
+    }
+    .samImg {
+        height: 140px;
+        width: 120px;
+    }
+    .clientPhoto-container {
+        margin-left: 30px;
+    }
+    .home .topReel {
+        margin-bottom: 10px;
+    }
+    .home .reel {
+        gap: 10px;
+    }
+    .aboutBody {
+        margin-bottom: 100px;
+        margin-top: 80px;
+    }
+    .textarea-container-home {
+        margin-bottom: 5px;
+    }
+    .textarea-container-home textarea {
+        font-size: 7px;
+        height: 70px;
+        width: 230px;
+    }
+    .firstline {
+        font-size: 7px;
+        padding-left: 80px;
+    }
+    .thirdline {
+        font-size: 7px;
+        padding-right: 80px;
+    }
+    .secondline, .second-end {
+        font-size: 13px;
+        margin-top: 9px;
+    }
+    .page-container {
+        margin: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .firstline {
+        font-size: 6px;
+        padding-left: 65px;
+    }
+    .thirdline {
+        font-size: 6px;
+        padding-right: 65px;
+    }
+    .secondline, .second-end {
+        font-size: 11px;
+    }
+    .textarea-container-home textarea {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .firstline {
+        padding-left: 40px;
+    }
+    .thirdline {
+        padding-right: 40px;
+    }
+    .textarea-container-home textarea {
+        width: 130px;
+    }
+}

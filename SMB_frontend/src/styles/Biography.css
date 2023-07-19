@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27'); 
+
+.bio-span {
+  font-size: 28px;
+  font-weight: lighter;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.bioBody {
+  margin-left: 5px;
+}
+
+.bioBody img {
+  float: right;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.bioImg {
+  width: 550px;
+  height: 100%;
+}
+
+.editBio-container {
+  display: flex;
+}
+
+.editBio {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.editBio textarea {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Abel;
+  font-size: 28px;
+  padding: 10px;
+  resize: vertical;
+  transition: all .3s;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 10px;
+}
+
+.buttonBioEdit {
+    float: right;
+    background-color: #240f0e;
+    color: #e6d8d9;
+    border-color: #716161;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: all 0.3s;
+    width: 170px;
+    align-self: center;
+}
+
+.buttonBioEdit:hover {
+  background-color: #655b5b;
+  cursor: pointer;
+}
+
+.editBioButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1900px) {
+  .bio-span {
+    font-size: 24px;
+  }
+  .bioImg {
+    width: 500px;
+  }
+  .editBio textarea {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .bio-span {
+    font-size: 22px;
+  }
+  .bioImg {
+    width: 450px;
+  }
+  .editBio textarea {
+    height: 600px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .buttonBioEdit {
+    width: 150px;
+    font-size: 15px;
+  }
+  .bio-span {
+    font-size: 20px;
+  }
+  .bioImg {
+    width: 400px;
+  }
+  .editBio textarea {
+    height: 500px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .bioImg {
+    width: 360px;
+  }
+  .biobody img {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .bio-span {
+    font-size: 18px;
+  }
+  .editBio textarea {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .buttonBioEdit {
+    width: 120px;
+    font-size: 11px;
+  }
+  .bioImg {
+    width: 320px;
+  }
+  .bio-span {
+    font-size: 16px;
+  }
+  .editBio textarea {
+    font-size: 16px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .bioImg {
+    width: 300px;
+  }
+  .bioBody img {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .bio-span {
+    font-size: 15px;
+  }
+  .editBio textarea {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .buttonBioEdit {
+    font-size: 9px;
+    padding: 5px;
+    width: 90px;
+  }
+  .bioImg {
+    width: 250px;
+  }
+  .bioBody img {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .bio-span {
+    font-size: 14px;
+  }
+  .editBio textarea {
+    font-size: 14px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .buttonPosterEdit {
+    width: 80px;
+  }
+  .bioImg {
+    width: 230px;
+  }
+  .bio-span {
+    font-size: 12px;
+  }
+  .editBio textarea {
+    font-size: 12px;
+    height: 330px;
+  }
+  .editBioButtons {
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .buttonBioEdit {
+    font-size: 7px;
+    padding: 5px;
+    width: 80px;
+  }
+  .bioImg {
+    width: 190px;
+  }
+  .bio-span {
+    font-size: 10px;
+  }
+  .editBio textarea {
+    font-size: 10px;
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonBioEdit {
+    font-size: 5px;
+    padding: 3px 5px;
+    width: 60px;
+  }
+  .bioImg {
+    width: 150px;
+  }
+  .bioBody img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .bio-span {
+    font-size: 8px;
+  }
+  .editBio textarea {
+    font-size: 8px;
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .bioImg {
+    width: 130px;
+  }
+  .bio-span {
+    font-size: 7px;
+  }
+  .editBio textarea {
+    font-size: 7px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .editBio textarea {
+    height: 250px;
+  }
+}
+
+

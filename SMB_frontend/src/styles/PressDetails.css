@@ -1,0 +1,14 @@
+.PressPage{
+    display: flex;
+    flex-direction: row;
+    font-family: Abel;
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 100px;
+    justify-content: center;
+}
+
+.PressIcons {
+    padding-top: 30px;
+}

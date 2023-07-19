@@ -1,0 +1,116 @@
+.socialBar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51, 20, 20, 65%);
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    color: #b3a6a7;
+    padding-left:50px
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.admin-link {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.admin-link a {
+    color: #b3a6a7;
+    text-decoration: none;
+}
+
+.admin-link button {
+  color: #b3a6a7;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: Quicksand,sans-serif;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 1600px) {
+    .socialBar {
+      height: 50px;
+    }
+    .admin-link a, .admin-link button {
+      font-size: large; 
+    }
+    .admin-link {
+      margin-right: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .socialBar {
+        height: 40px;
+    }
+    .admin-link a, .admin-link button {
+      font-size: small;
+    }
+    .icons {
+        font-size: large;
+    }
+    .admin-link {
+      margin-right: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .socialBar {
+      height: 35px;
+    }
+    .admin-link a, .admin-link button {
+      font-size: x-small;
+    }
+    .icons {
+        font-size: small;
+        padding-left: 35px;
+    }
+    .admin-link {
+      margin-right: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .socialBar {
+      height: 25px;
+    }
+    .admin-link {
+        margin-right: 15px;
+    }
+    .admin-link a, .admin-link button {
+      font-size: 7px;
+    }
+    .icons {
+        font-size: x-small;
+        padding-left: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .socialBar {
+        height: 20px;
+    }
+    .admin-link a, .admin-link button {
+      font-size: 5px;
+    }
+    .admin-link {
+        margin-right: 10px;
+    }
+    .icons {
+        font-size: xx-small;
+        padding-left: 25px;
+    }
+  }

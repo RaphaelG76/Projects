@@ -1,0 +1,135 @@
+.imgContainer-video{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video .blank {
+    height:380px;
+    width: 510px;
+}
+.caption{
+    text-align: 10px;
+}
+
+.video .playButton img {
+    width:60px;
+}
+
+.delete-video {
+    color: #e6d8d9;
+    background-color: #240f0e;
+    width: 100px;
+    border-color: #716161;
+    border-radius: 5px;
+    font-family: Abel;
+    font-size: 18px;
+    align-self: flex-end;
+    transition: all .3s;
+}
+
+.delete-video:hover {
+    background-color: #655b5b;
+    cursor: pointer;
+}
+
+.video-delete {
+    display: flex;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .video .blank {
+        height: 340px;
+        width: 460px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .video .blank {
+        height: 300px;
+        width: 420px;
+    }
+    .delete-video {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .video .blank {
+        height: 280px;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .video .blank {
+        height: 250px;
+        width: 340px;
+    }
+    .delete-video {
+        font-size: 11px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .video .blank {
+        height: 230px;
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .video .blank {
+        height: 200px;
+        width: 270px;
+    }
+    .delete-video {
+        font-size: 9px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .video .blank {
+        height: 180px;
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .video .blank {
+        height: 140px;
+        width: 190px;
+    }
+    .delete-video {
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .video .blank {
+        height: 110px;
+        width: 140px;
+    }
+    .delete-video {
+        font-size: 5px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .video .blank {
+        height: 90px;
+        width: 120px;
+    }
+}

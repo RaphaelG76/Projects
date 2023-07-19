@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.press{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    flex-direction: row;
+}
+
+.pressIcon{
+    width: calc((100% - 200px) / 3);
+    flex-shrink: 4;
+}
+
+.pressIcon:last-child:not(:nth-last-child(-n+2)) {
+    margin-right: 0;
+  }
+
+.press_title{
+    font-size: 45px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-family: Lobster;
+}
+
+.project_title{
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 35px;
+    font-family: Oswald;
+}
+
+.press_image{
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.quote{
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: Abel;
+    color: #D3D3D3;
+    display: inline-block;
+    white-space: pre-line;
+}
+
+.author{
+    font-weight: 300;
+    font-size: 24px;
+    display: block;
+    padding-top: 25px;
+}
+
+.openDetails{
+    background-color: transparent;
+    border: none;
+    outline:none;
+}
+
+.blank-add-press {
+    width: 100%;
+    height: 90%;
+    border: 2px solid rgb(131, 127, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.press-add-container {
+    align-items: center;
+    display: flex;
+    width: calc((100% - 200px) / 3);
+}
+
+.editContent-press {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.buttonDetailsUpdate-press {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.buttonDetailsUpdate-press button {
+    float: right;
+    width: 150px;
+    background-color: #240f0e;
+    color: #e6d8d9;
+    border-color: #716161;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.buttonDetailsUpdate-press button:hover {
+    background-color: #655b5b;
+    cursor: pointer;
+}
+
+.edit-press input, .edit-press textarea {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: all .3s;
+    width: 100%;
+}
+
+.project_title-edit {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-family: Oswald;
+}
+
+.edit-press textarea {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: Abel;
+    resize: vertical;
+    height: 200px;
+}
+
+.author-edit {
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.delete-button-press {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1600px) {
+    .project_title, .project_title-edit {
+        font-size: 28px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 18px;
+    }
+    .author, .author-edit {
+        font-size: 22px;
+    }
+    .press_title {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .pressIcon, .press-add-container {
+        width: calc((100% - 160px) / 3);
+    }
+    .press {
+        gap: 80px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 17px;
+    }
+    .author, .author-edit {
+        font-size: 20px;
+    }
+    .press_title {
+        font-size: 38px;
+    }
+    .buttonDetailsUpdate-press button {
+        font-size: 15px;
+        padding: 8px 18px;
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .pressIcon, .press-add-container {
+        width: calc((100% - 120px) / 3);
+    }
+    .press {
+        gap: 60px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 15px;
+    }
+    .author, .author-edit {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .press_title {
+        font-size: 33px;
+    }
+    .press_image {
+        max-height: 80px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .project_title, .project_title-edit {
+        font-size: 20px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 14px;
+    }
+    .press_title {
+        font-size: 30px;
+    }
+    .buttonDetailsUpdate-press button {
+        font-size: 12px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .press_image {
+        max-height: 60px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 13px;
+    }
+    .author, .author-edit {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .press_title {
+        font-size: 27px;
+    }
+    .blank-add-press {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .press_image {
+        max-height: 50px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 11px;
+    }
+    .author, .author-edit {
+        font-size: 15px;
+    }
+    .press_title {
+        font-size: 23px;
+    }
+    .buttonDetailsUpdate-press button {
+        font-size: 9px;
+        width: 80px;
+        padding: 5px 15px;
+    }
+    .edit-press input {
+        padding: 5px;
+    }
+    .edit-press textarea {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .project_title, .project_title-edit {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .author, .author-edit {
+        font-size: 13px;
+    }
+    .buttonDetailsUpdate-press button {
+        font-size: 7px;
+        padding: 4px 10px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pressIcon, .press-add-container {
+        width: calc((100% - 100px) / 3);
+    }
+    .blank-add-press {
+        height: 70%;
+    }
+    .press {
+        gap: 50px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 13px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 10px;
+    }
+    .author, .author-edit {
+        font-size: 11px;
+        padding-top: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .press {
+        gap: 40px;
+    }
+    .pressIcon, .press-add-container {
+        width: calc((100% - 80px) / 3);
+    }
+    .project_title, .project_title-edit {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 8px;
+    }
+    .author, .author-edit {
+        font-size: 9px;
+    }
+    .press_title {
+        font-size: 13px;
+    }
+    .buttonDetailsUpdate-press button {
+        font-size: 5px;
+        padding: 3px 5px;
+        width: 50px;
+    }
+    .edit-press textarea {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .press {
+        gap: 30px;
+    }
+    .pressIcon, .press-add-container {
+        width: calc((100% - 60px) / 3);
+    }
+    .press_image {
+        max-height: 35px;
+    }
+    .project_title, .project_title-edit {
+        font-size: 8px;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+    .quote, .edit-press textarea {
+        font-size: 7px;
+    }
+    .author, .author-edit {
+        font-size: 8px;
+    }
+    .press_title {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

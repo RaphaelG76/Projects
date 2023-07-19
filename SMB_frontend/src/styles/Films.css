@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27'); 
+
+.films{
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr 0fr;
+    align-items: center;
+    gap:40px;
+    justify-content: center;
+}
+
+.filmIcons {
+    padding-top: 30px;
+}
+
+.bannerFilms{
+    width: 100%;
+    height: 18em;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+.search{
+    margin-bottom: 50px;
+}
+
+.delete-feature {
+    color: white;
+    background-color: black;
+    width: 100px;
+    border-color: #fff;
+    border-radius: 5px;
+    font-family: Abel;
+    font-size: 15px;
+    align-self: flex-end;
+    transition: all .3s;
+}
+
+.delete-feature:hover {
+    background-color: #494848;
+    cursor: pointer;
+}
+
+.popup-deleteFeature {
+    display: flex;
+}
+
+.confirm-buttons {
+    background-color: initial;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all .3s;
+    width: 150px;
+    margin: 10px;
+}
+
+.confirm-buttons:hover{
+    background-color: #584646;
+    cursor: pointer;
+}
+
+.delete-button {
+    display: flex;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 1900px) {
+    .films {
+        grid-template-columns: 0fr 0fr 0fr 0fr;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .confirm-buttons {
+        font-size: 16px;
+        margin: 9px;
+        padding: 9px 19px;
+        width: 140px;
+    }
+    .bannerFilms {
+        height: 16em;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .bannerFilms {
+        height: 15em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .delete-feature {
+        font-size: 13px;
+        width: 80px;
+    }
+    .confirm-buttons {
+        font-size: 13px;
+        margin: 7px;
+        width: 120px;
+    }
+    .films {
+        gap: 30px;
+    }
+    .bannerFilms {
+        height: 14em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bannerFilms {
+        height: 13em;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .confirm-buttons {
+        font-size: 11px;
+        margin: 5px;
+        padding: 7px 17px;
+        width: 100px;
+    }
+    .bannerFilms {
+        height: 12em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .delete-feature {
+        font-size: 10px;
+        width: 60px;
+    }
+    .bannerFilms {
+        height: 11em;
+    }
+    .films {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .confirm-buttons {
+        font-size: 8px;
+        margin: 4px;
+        padding: 6px 17px;
+        width: 80px;
+    }
+    .bannerFilms {
+        height: 10em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .delete-feature {
+        font-size: 8px;
+        width: 50px;
+    }
+    .confirm-buttons {
+        font-size: 7px;
+        margin: 3px;
+        padding: 5px 15px;
+        width: 70px;
+    }
+    .bannerFilms {
+        height: 9em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .films {
+        grid-template-columns: 0fr 0fr 0fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .delete-feature {
+        font-size: 5px;
+        width: 30px;
+    }
+    .confirm-buttons {
+        font-size: 5px;
+        margin: 2px;
+        padding: 3px 15px;
+        width: 50px;
+    }
+    .bannerFilms {
+        height: 5em;
+    }
+    .films {
+        gap: 10px;
+        grid-template-columns: 0fr 0fr 0fr;
+    }
+}

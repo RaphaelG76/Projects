@@ -1,0 +1,149 @@
+.searchInput{
+    margin-top: 0px;
+    display: flex;
+}
+
+.search{
+    float: right;
+    border: 2px solid #242526;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.search input {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-family: Abel;
+    font-size: 20px;
+    padding: 16px 15px 16px 0;
+    height: 10px;
+    width: 200px;
+    float: right;
+}
+
+
+.searchIcon{
+    height: 43px; 
+    width: 50px;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    float:right;
+}
+
+input:focus {
+    outline: none;
+}
+.searchIcon svg {
+    font-size: 35px;
+}
+
+#clearBtn{
+    cursor: pointer;
+}
+
+#clickBtn{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+    .search input {
+        width: 190px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .search input {
+        width: 180px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .search input {
+        width: 160px;
+        font-size: 13px;
+        padding: 12px 0px;
+    }
+    .searchIcon svg {
+        font-size: 20px;
+    }
+    .searchIcon {
+        height: 35px;
+    }
+    .search {
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .search input {
+        width: 140px;
+        font-size: 11px;
+        padding: 9px 0px;
+    }
+    .searchIcon svg {
+        font-size: 15px;
+    }
+    .searchIcon {
+        height: 28px;
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .search input {
+        width: 120px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .search input {
+        width: 110px;
+        font-size: 9px;
+        padding: 7px 0;
+    }
+    .searchIcon svg {
+        font-size: 12px;
+    }
+    .searchIcon {
+        height: 24px;
+    }
+    .search {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .search input {
+        width: 90px;
+        font-size: 7px;
+        padding: 6px 0;
+    }
+    .searchIcon svg {
+        font-size: 10px;
+    }
+    .searchIcon {
+        height: 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search input {
+        width: 50px;
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .search input {
+        width: 40px;
+        font-size: 4px;
+    }
+    .searchIcon svg {
+        font-size: 9px;
+    }
+}
+

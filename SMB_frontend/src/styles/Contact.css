@@ -1,0 +1,420 @@
+
+  .contact-info {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Abel;
+  }
+  
+  .agent-info {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Abel;
+  }
+
+  .contact-form {
+    padding: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Abel;
+  }
+  
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  .input-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .first-name, .last-name {
+    width: 100%;
+  }
+  
+  .message-container input, .message-container textarea, .editing-client textarea, .editing-agent textarea {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 24px;
+    font-family: Abel;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.3s;
+    resize: vertical;
+  }
+
+  .editing-client textarea, .editing-agent textarea {
+    width: 650px;
+  }
+  
+  .message-container input:focus, .message-container textarea:focus, .editing-client textarea:focus, .editing-agent textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #a0a0a0;
+  }
+  
+  button[type='submit'] {
+    float: right;
+    width: 170px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #494848;
+    cursor: pointer;
+  }
+
+.contact-container {
+  display: flex;
+  gap: 200px;
+}
+
+.top-contact-container {
+  display: flex;
+  gap: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.message-container {
+  flex-grow: 2;
+}
+
+.contact-email {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-message {
+  margin-bottom: 20px;
+}
+
+.contact-first-name, .contact-last-name, .contact-message, .contact-email {
+  font-size: 25px;
+  width: 100%;
+}
+
+.contact-info span, .agent-info span {
+  width: 100%;
+  display: inline-block;
+  white-space: pre-line;
+  white-space: pre-wrap;
+}
+
+.editContent-contact {
+  display: flex;
+  margin-top: 15px;
+}
+
+.buttonInfoEdit {
+  background-color: #240f0e;
+  color: #e6d8d9;
+  border-color: #716161;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.buttonInfoEdit:hover, .buttonInfoUpdate button:hover {
+  background-color: #655b5b;
+  cursor: pointer;
+}
+
+.buttonInfoUpdate {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.buttonInfoUpdate button {
+  width: 150px;
+  background-color: #240f0e;
+  color: #e6d8d9;
+  border-color: #716161;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1900px) {
+  h3 {
+    font-size: x-large;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 20px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 20px;
+  }
+  .contact-container {
+    gap: 100px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .agent-info span, .contact-info span {
+    font-size: 17px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 17px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .buttonInfoEdit{
+    font-size: 15px;
+  }
+  .buttonInfoUpdate button {
+    font-size: 15px;
+    padding: 8px 18px;
+    width: 130px;
+  }
+  h3 {
+    margin: 20px 0px 20px;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 15px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 15px;
+  }
+  .top-contact-container {
+    gap: 15px;
+  }
+  .contact-email {
+    margin-top: 15px;
+  }
+  .contact-email, .contact-message {
+    margin-bottom: 15px;
+  }
+  button[type='submit'] {
+    font-size: 15px;
+    width: 130px;
+    padding: 10px 20px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .buttonInfoEdit {
+    font-size: 11px;
+  }
+  .buttonInfoUpdate button {
+    font-size: 12px;
+    width: 100px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 14px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 14px;
+  }
+  .contact-container {
+    gap: 50px;
+  }
+  button[type="submit"] {
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 110px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .agent-info span, .contact-info span {
+    font-size: 13px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 13px;
+  }
+  .contact-container {
+    gap: 40px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .agent-info span, .contact-info span {
+    font-size: 12px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .top-contact-container {
+    gap: 10px;
+  }
+  .contact-email {
+    margin-top: 10px;
+  }
+  .contact-email, .contact-message {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .buttonInfoUpdate button {
+    font-size: 9px;
+    width: 80px;
+    padding: 5px 15px;
+  }
+  .buttonInfoEdit {
+    font-size: 9px;
+    padding: 5px;
+    width: 80px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 11px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 11px;
+  }
+  .contact-form {
+    padding: 5px;
+  }
+  .agent-info h3 {
+    margin-bottom: 0px;
+  }
+  button[type="submit"] {
+    font-size: 10px;
+    padding: 7px 20px;
+    width: 90px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .buttonInfoUpdate button {
+    font-size: 7px;
+    padding: 4px 10px;
+    width: 70px;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 10px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .buttonInfoEdit {
+    font-size: 7px;
+    padding: 5px;
+    width: 70px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 8px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 8px;
+  }
+  .top-contact-container {
+    gap: 5px;
+  }
+  .contact-email {
+    margin-top: 5px;
+  }
+  .contact-email, .contact-message {
+    margin-bottom: 5px;
+  }
+  button[type="submit"] {
+    font-size: 8px;
+    padding: 6px 20px;
+    width: 70px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonInfoUpdate button {
+    font-size: 5px;
+    padding: 3px 5px;
+    width: 50px;
+  }
+  .buttonInfoEdit {
+    font-size: 5px;
+    padding: 3px 5px;
+    width: 50px;
+  }
+  .h3 {
+    font-size: 11px;
+  }
+  .agent-info span, .contact-info span {
+    font-size: 7px;
+  }
+  .editing-agent textarea, .editing-client textarea, .message-container input, .message-container textarea {
+    font-size: 7px;
+  }
+  button[type="submit"] {
+    font-size: 7px;
+    padding: 6px 10px;
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form {
+    padding: 0px;
+  }
+  .editing-agent textarea, .editing-client textarea {
+    width: 300px;
+  }
+}

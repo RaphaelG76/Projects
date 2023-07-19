@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27');
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blank{
+    height:380px;
+    width: 452px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.blank-add{
+    height: 380px;
+    width: 452px;
+    border: 1px solid rgb(131, 127, 127);
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption{
+    font-size: 25px;
+    padding-top: 15px;
+    font-family: Abel;
+}
+
+.addButton{
+    background-color: transparent;
+    background-size: 100px;
+    width: 100px;
+    height: 83px;
+    border: 0;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.addButton img{
+    width:100px;
+}
+
+.playButton-container {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.playButton{
+    background-color: transparent;
+    background-image: url('//assets.squarespace.com/universal/images-v6/damask/play-button@2x.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+}
+.playButton img{
+        width:50px;
+}
+
+.top-bar {
+	color: var(--white);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0;
+	font-size: 32px;
+	margin-bottom: -5px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+}
+.amounts {
+	margin: 2px;
+	font-size: 30px;
+	color: var(--white);
+    font-family: var(--secondfont);
+	margin-top: 0;
+	margin-bottom: -12px
+}
+
+.delete-feature {
+    color: #e6d8d9;
+    background-color: #240f0e;
+    width: 100px;
+    border-color: #716161;
+    border-radius: 5px;
+    font-family: Abel;
+    font-size: 15px;
+    align-self: flex-end;
+    transition: all .3s;
+}
+
+.delete-feature:hover {
+    background-color: #655b5b;
+    cursor: pointer;
+}
+
+.popup-deleteFeature {
+    display: flex;
+}
+
+.confirm-buttons {
+    background-color: initial;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all .3s;
+    width: 150px;
+    margin: 10px;
+}
+
+.confirm-buttons:hover{
+    background-color: #584646;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1600px) {
+    .blank, .blank-add {
+        height: 360px;
+        width: 432px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .blank, .blank-add {
+        height: 330px;
+        width: 392px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .blank, .blank-add {
+        height: 290px;
+        width: 352px;
+    }
+    .caption {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .blank, .blank-add {
+        height: 250px;
+        width: 282px;
+    }
+    .playButton {
+        height: 30px;
+        width: 30px;
+    }
+    .addButton, .addButton img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .blank, .blank-add {
+        height: 210px;
+        width: 242px;
+    }
+    .caption {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .blank, .blank-add {
+        height: 190px;
+        width: 222px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blank, .blank-add {
+        height: 150px;
+        width: 182px;
+    }
+    .playButton {
+        width: 20px;
+        height: 20px;
+    }
+    .caption {
+        font-size: 11px;
+    }
+    .addButton, .addButton img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blank, .blank-add {
+        height: 130px;
+        width: 147px;
+    }
+    .caption {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .blank, .blank-add {
+        height: 100px;
+        width: 117px;
+    }
+    .caption {
+        font-size: 7px;
+        padding-top: 10px;
+    }
+    .addButton, .addButton img {
+        width: 30px;
+    }
+}
+

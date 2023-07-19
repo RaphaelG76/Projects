@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.filterButtons .fbutton {
+    background-color: rgba(0,0,0,.0); 
+    border: 2px solid #242526; 
+    color: white; /* White text */
+    padding: 5px;  /*Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    font-family: Abel;
+    position: relative;
+    height: 43px;
+    width: 170px;
+    font-size: 20px;
+}
+
+.fbutton:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.fbutton:last-child {
+    border-radius: 0px 4px 4px 0px;
+}
+  
+/* Clear floats (clearfix hack) */
+.filterButtons:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.filterButtons .fbutton:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+  
+/* Add a background color on hover */
+.filterButtons .fbutton:hover {
+    background-color: #322f30;
+}
+
+.filterButtons .fbutton.active {
+    background-color: #242122;
+    color: #f75e5e
+}
+
+@media only screen and (max-width: 1600px) {
+    .filterButtons .fbutton {
+        font-size: 17px;
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .filterButtons .fbutton {
+        font-size: 15px;
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .filterButtons .fbutton {
+        font-size: 13px;
+        width: 120px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .filterButtons .fbutton {
+        font-size: 11px;
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .filterButtons .fbutton {
+        font-size: 10px;
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .filterButtons .fbutton {
+        font-size: 9px;
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .filterButtons .fbutton {
+        font-size: 7px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .filterButtons .fbutton {
+        font-size: 6px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .filterButtons .fbutton {
+        font-size: 5px;
+        width: 40px;
+    }
+}

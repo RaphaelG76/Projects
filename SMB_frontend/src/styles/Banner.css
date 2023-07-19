@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%27'); 
+
+.bannerImg{
+    width: 100%;
+    height: 18em;
+    object-fit: cover;
+}
+.banner{
+    font-size: 150px;
+    position: relative;
+    margin-left: 100px;
+    letter-spacing: .2rem;
+    font-family: Abel;
+    margin-bottom: 20px;
+}
+
+.banner-container {
+    display: flex;
+    position: relative;
+}
+
+.banner-name {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    align-items: end;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .banner {
+        font-size: 130px;
+    }
+    .bannerImg {
+        height: 16em;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .banner {
+        font-size: 120px;
+    }
+    .bannerImg {
+        height: 15em;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .banner {
+        font-size: 110px;
+    }
+    .bannerImg {
+        height: 14em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner {
+        font-size: 100px;
+    }
+    .bannerImg {
+        height: 13em;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .banner {
+        font-size: 90px;
+    }
+    .bannerImg {
+        height: 12em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .banner {
+        font-size: 80px;
+    }
+    .bannerImg {
+        height: 11em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .banner {
+        font-size: 70px;
+        margin-left: 50px;
+    }
+    .bannerImg {
+        height: 10em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .banner {
+        font-size: 60px;
+    }
+    .bannerImg {
+        height: 8em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        font-size: 45px;
+    }
+    .bannerImg {
+        height: 7em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .bannerImg {
+        height: 5em;
+    }
+}

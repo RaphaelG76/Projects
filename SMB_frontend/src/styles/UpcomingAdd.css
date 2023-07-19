@@ -1,0 +1,363 @@
+
+.popup-header, .popup-header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.popup-header-img {
+    flex-direction: column;
+}
+
+.popup-header h2, .popup-header-img h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Abel;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+.popup-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.optional {
+    color: #b3a6a7;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 30px;
+    text-align: center;
+}
+
+.popup-content label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #b3a6a7;
+    margin-top: 3px;
+}
+
+.popup-content select {
+    width: 800px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button-submitUpcoming {
+    margin-top: 10px;
+}
+
+.button-submitUpcoming[type='submit']:hover, .cancel-upload[type='cancel']:hover {
+    background-color: #584646;
+    cursor: pointer;
+}
+
+.cancel-upload[type='cancel'] {
+    background-color: initial;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all .3s;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.upload-content {
+    color:#797979;
+}
+
+.popup-content label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #b3a6a7;
+}
+
+.pos-center {
+    position: fixed;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #000000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+
+.popup-form textarea {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Abel;
+    font-size: 18px;
+    padding: 10px;
+    resize: vertical;
+    transition: all .3s;
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-form button[type="submit"] {
+    background-color: initial;
+    border-color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all .3s;
+    width: 150px;
+    align-self: end;
+}
+
+.popup-form input {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Abel;
+    font-size: 18px;
+    padding: 10px;
+    resize: vertical;
+    transition: all .3s;
+    width: 800px;
+}
+
+.x-button {
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 1600px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 30px;
+    }
+    .popup-content select {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 25px;
+    }
+    .popup-content label {
+        font-size: 12px;
+    }
+    .popup-content select {
+        font-size: 12px;
+        width: 600px;
+    }
+    .popup-form input, .popup-form textarea{
+        width: 600px;
+        font-size: 12px;
+    }
+    .popup-form button[type="submit"] {
+        font-size: 12px;
+        width: 100px;
+        padding: 5px 10px;
+    }
+    .loader {
+        height: 60px;
+        width: 60px;
+    }
+    .cancel-upload[type='cancel'] {
+        width: 100px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .x-button {
+        font-size: large;
+    }
+    .optional {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 20px;
+    }
+    .popup-content label {
+        font-size: 10px;
+    }
+    .popup-content select {
+        font-size: 10px;
+        width: 550px;
+    }
+    .popup-form input, .popup-form textarea {
+        width: 550px;
+        font-size: 10px;
+    }
+    .popup-form button[type="submit"] {
+        font-size: 10px;
+    }
+    .loader {
+        height: 50px;
+        width: 50px;
+    }
+    .cancel-upload[type='cancel'] {
+        font-size: 10px;
+    }
+    .x-button {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 18px;
+    }
+    .popup-content label {
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+    .popup-content select {
+        font-size: 9px;
+        width: 500px;
+        padding: 6px;
+    }
+    .popup-form input, .popup-form textarea {
+        width: 500px;
+        font-size: 9px;
+        padding: 6px;
+    }
+    .popup-form button[type="submit"] {
+        font-size: 9px;
+        width: 80px;
+    }
+    .loader {
+        height: 40px;
+        width: 40px;
+    }
+    .cancel-upload[type='cancel'] {
+        font-size: 9px;
+        width: 80px;
+    }
+    .x-button {
+        font-size: small;
+    }
+    .popup-content {
+        padding: 10px 10px 20px;
+    }
+    .optional {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 13px;
+        margin: 10px 0 0;
+    }
+    .popup-header {
+        padding: 5px;
+    }
+    .popup-content label {
+        font-size: 7px;
+    }
+    .popup-content select {
+        font-size: 7px;
+        width: 400px;
+    }
+    .popup-form input, .popup-form textarea {
+        width: 400px;
+        font-size: 7px;
+    }
+    .popup-form button[type="submit"] {
+        font-size: 7px;
+        width: 70px;
+    }
+    .loader {
+        height: 30px;
+        width: 30px;
+    }
+    .cancel-upload[type='cancel'] {
+        font-size: 7px;
+        width: 70px;
+    }
+    .x-button {
+        font-size: x-small;
+    }
+    .optional {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .popup-header h2, .popup-header-img h2 {
+        font-size: 10px;
+        margin: 10px 0 0;
+    }
+    .popup-content {
+        padding: 5px 5px 10px;
+    }
+    .popup-content label {
+        font-size: 5px;
+    }
+    .popup-content select {
+        font-size: 5px;
+        width: 250px;
+        padding: 3px;
+    }
+    .popup-form input, .popup-form textarea {
+        width: 250px;
+        font-size: 5px;
+        padding: 3px;
+    }
+    .popup-form button[type="submit"], .cancel-upload[type='cancel'] {
+        font-size: 5px;
+        width: 50px;
+        padding: 3px 5px;
+    }
+    .loader {
+        height: 20px;
+        width: 20px;
+        border: 5px solid #f3f3f3;
+        border-top-color: #000;
+    }
+    .x-button {
+        font-size: 8px;
+    }
+    .optional {
+        font-size: 5px;
+    }
+}
