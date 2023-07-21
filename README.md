@@ -55,5 +55,6 @@ My personal project portfolio.
    ![wildrydes5](https://github.com/RaphaelG76/Projects/assets/91983169/594f1cac-e7b7-42fb-8479-bda2f6f9a582)
 
    6. Amazon API Gateaway to utilize my lambda function when requesting horse ride, then store data into DynamoDB
+      
    ![wildrydes6](https://github.com/RaphaelG76/Projects/assets/91983169/9f9eee26-9f1c-4044-8235-4d91d0b64135)
    ![wildrydes7](https://github.com/RaphaelG76/Projects/assets/91983169/3579ffd9-fb57-4e9b-94e7-ad36e94daaaa)
