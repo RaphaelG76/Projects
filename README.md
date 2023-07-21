@@ -58,3 +58,8 @@ My personal project portfolio.
       
    ![wildrydes6](https://github.com/RaphaelG76/Projects/assets/91983169/9f9eee26-9f1c-4044-8235-4d91d0b64135)
    ![wildrydes7](https://github.com/RaphaelG76/Projects/assets/91983169/3579ffd9-fb57-4e9b-94e7-ad36e94daaaa)
+   
+7) Deployed WordPress Application
+
+   ![wordpress1](https://github.com/RaphaelG76/Projects/assets/91983169/11e92b0a-779c-427a-951d-e28bb97b3104)
+   ![wordpress2](https://github.com/RaphaelG76/Projects/assets/91983169/f6b9768c-5c51-4e88-9570-a44561bb73dd)
