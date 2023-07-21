@@ -34,7 +34,9 @@ My personal project portfolio.
 ![fightgame1](https://github.com/RaphaelG76/Projects/assets/91983169/2841bc2b-13b5-462e-a94f-11dd4bac5b17)
 
 6) Deployed a Serverless Web Application
+   1. Homepage for website
    ![wildrydes1](https://github.com/RaphaelG76/Projects/assets/91983169/06b96a37-e19d-4c6a-a493-a3982423032e)
+   2.
    ![wildrydes2](https://github.com/RaphaelG76/Projects/assets/91983169/e48b0251-b2ba-4098-9e1e-75e4128c99d5)
    ![wildrydes3](https://github.com/RaphaelG76/Projects/assets/91983169/6751d6f1-2316-4bd0-8d7c-c4e6a54c5ca6)
    ![wildrydes4](https://github.com/RaphaelG76/Projects/assets/91983169/70731e06-0d73-4b15-940c-9bafc9497a0f)
