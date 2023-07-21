@@ -35,11 +35,25 @@ My personal project portfolio.
 
 6) Deployed a Serverless Web Application
    1. Homepage for website
+      
    ![wildrydes1](https://github.com/RaphaelG76/Projects/assets/91983169/06b96a37-e19d-4c6a-a493-a3982423032e)
-   2.
+
+   2. Used Amazon Cognito to setup a functioning username/password data pool
+   
    ![wildrydes2](https://github.com/RaphaelG76/Projects/assets/91983169/e48b0251-b2ba-4098-9e1e-75e4128c99d5)
+ 
+   3. Application in use, click somewhere on the map and request a horse
+
    ![wildrydes3](https://github.com/RaphaelG76/Projects/assets/91983169/6751d6f1-2316-4bd0-8d7c-c4e6a54c5ca6)
+
+   4. Hosted using Amplify
+
    ![wildrydes4](https://github.com/RaphaelG76/Projects/assets/91983169/70731e06-0d73-4b15-940c-9bafc9497a0f)
+
+   5. Cognito user pool data
+  
    ![wildrydes5](https://github.com/RaphaelG76/Projects/assets/91983169/594f1cac-e7b7-42fb-8479-bda2f6f9a582)
+
+   6. Amazon API Gateaway to utilize my lambda function when requesting horse ride, then store data into DynamoDB
    ![wildrydes6](https://github.com/RaphaelG76/Projects/assets/91983169/9f9eee26-9f1c-4044-8235-4d91d0b64135)
    ![wildrydes7](https://github.com/RaphaelG76/Projects/assets/91983169/3579ffd9-fb57-4e9b-94e7-ad36e94daaaa)
