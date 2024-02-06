@@ -63,3 +63,10 @@ My personal project portfolio.
 
    ![wordpress1](https://github.com/RaphaelG76/Projects/assets/91983169/11e92b0a-779c-427a-951d-e28bb97b3104)
    ![wordpress2](https://github.com/RaphaelG76/Projects/assets/91983169/f6b9768c-5c51-4e88-9570-a44561bb73dd)
+
+8) ACA Error Reporter
+   ![Detail](https://github.com/RaphaelG76/Projects/assets/91983169/884dab80-f478-489d-95b0-87a9591b1f52)
+   ![Error](https://github.com/RaphaelG76/Projects/assets/91983169/a00f4ace-d43a-4c6b-a3e1-e413696392a4)
+   ![report](https://github.com/RaphaelG76/Projects/assets/91983169/6ad9a1f5-0926-4c18-a5d3-e23b6516dc64)
+
+
