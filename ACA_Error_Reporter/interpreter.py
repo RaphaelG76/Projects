@@ -13,11 +13,11 @@ def redirect_print_to_file(statement, file_name):
         print(statement, file=file)
 
 
-config = ''
+config = pdfkit.configuration(
+    wkhtmltopdf="S:\\SALES and SUPPORT\\Product Documentation\\ACA\\ACA AIR Files Transmitted by IBS for Clients"
+                \\IRS ACA Errors Report\\_internal\\wkhtmltox\\bin\\wkhtmltopdf.exe)
 
-# pdfkit.configuration(
-#     wkhtmltopdf="S:\\SALES and SUPPORT\\Product Documentation\\ACA\\ACA AIR Files Transmitted by IBS for Clients"
-#                 \\IRS ACA Errors Report\\_internal\\wkhtmltox\\bin\\wkhtmltopdf.exe)
+
 
 prompt_users = 'Select Request File'
 prompt_errors = 'Select Acknowledgement File'
@@ -27,9 +27,8 @@ title = 'IRS ACA Errors Report'
 root = tk.Tk()
 root.withdraw()
 ctypes.windll.user32.MessageBoxW(0, prompt_users, title, 0)
-# file_path = filedialog.askopenfilename(initialdir='S:\\SALES and SUPPORT\\Product Documentation\\ACA\\ACA AIR Files '
-#                                                   'Transmitted by IBS for Clients')
-file_path = filedialog.askopenfilename()
+file_path = filedialog.askopenfilename(initialdir='S:\\SALES and SUPPORT\\Product Documentation\\ACA\\ACA AIR Files '
+                                                  'Transmitted by IBS for Clients')
 print(file_path)
 output_directory = ('/'.join(file_path.split('/')[:-1]))
 print(output_directory)
