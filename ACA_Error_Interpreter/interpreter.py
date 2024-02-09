@@ -12,24 +12,24 @@ def redirect_print_to_file(statement, file_name):
     with open(file_name, 'a') as file:
         print(statement, file=file)
 
-current_folder = os.path.dirname(__file__)  # Get the directory of the current script
-wkhtmltopdf_path = os.path.join(current_folder, 'wkhtmltox', 'bin', 'wkhtmltopdf.exe')
 
+# Get the directory of the current script
+current_folder = os.path.dirname(__file__)
+
+# configure htmltopdf script
+wkhtmltopdf_path = os.path.join(current_folder, 'wkhtmltox', 'bin', 'wkhtmltopdf.exe')
 config = pdfkit.configuration(
     wkhtmltopdf=wkhtmltopdf_path)
 
+# prompt for files
 prompt_users = 'Select Request File'
 prompt_errors = 'Select Acknowledgement File'
 title = 'IRS ACA Errors Report'
-
-# prompt for files
 root = tk.Tk()
 root.withdraw()
 ctypes.windll.user32.MessageBoxW(0, prompt_users, title, 0)
 file_path = filedialog.askopenfilename()
-print(file_path)
 output_directory = ('/'.join(file_path.split('/')[:-1]))
-print(output_directory)
 ctypes.windll.user32.MessageBoxW(0, prompt_errors, title, 0)
 file_path2 = filedialog.askopenfilename()
 
@@ -89,7 +89,7 @@ for index, form_detail in enumerate(
                 else:
                     sub_status = form_detail.find(
                         '{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}SubmissionLevelStatusCd').text
-
+# create dictionary based off error user ids as keys and error user errors as values
 euser_dictionary = dict(zip(euser_id_list, euser_error_list))
 
 # prints user id's and names from 'users.xml'
@@ -97,7 +97,6 @@ for form_detail in root_users.find('{urn:us:gov:treasury:irs:ext:aca:air:' + yea
     if form_detail.tag == '{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}EmployerInformationGrp':
         business = (form_detail.find('{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}BusinessName'))
         business_name = business.find('{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}BusinessNameLine1Txt').text
-        print(business_name)
         output_file_name = business_name + " Error Report.txt"
         output_file_name_html = business_name + " Error Report.html"
         output_file_name_pdf = os.path.join(output_directory, business_name + " Error Report.pdf")
@@ -109,7 +108,6 @@ for form_detail in root_users.find('{urn:us:gov:treasury:irs:ext:aca:air:' + yea
         for cerror in company_error_list:
             cerror_report = ("Name: " + business_name + "\n" + "Error: "
                              + cerror + "\n")
-            print(cerror_report)
             redirect_print_to_file(cerror_report, output_file_name)
     if form_detail.tag == '{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}Form1095CUpstreamDetail':
         if form_detail.find('{urn:us:gov:treasury:irs:ext:aca:air:' + year + '}RecordId') is not None:
@@ -131,13 +129,11 @@ for form_detail in root_users.find('{urn:us:gov:treasury:irs:ext:aca:air:' + yea
                     user_error_report = ("Name: " + user_fn + " " + user_mn + " " + user_ln + "\n" + "Record ID: " +
                                          user_id + "\n" + "Error: "
                                          + euser_dictionary[user_id] + "\n")
-                    print(user_error_report)
                     redirect_print_to_file(user_error_report, output_file_name)
                 else:
                     user_error_report = ("Name: " + user_fn + " " + user_ln + "\n" + "Record ID: " +
                                          user_id + "\n" "Error: " +
                                          euser_dictionary[user_id] + "\n")
-                    print(user_error_report)
                     redirect_print_to_file(user_error_report, output_file_name)
         else:
             pass
@@ -166,13 +162,11 @@ with open(output_file_name_html, 'w') as file:
 
 # convert html to pdf
 path = os.path.abspath(output_file_name_html)
-# converter.convert(f'file:///{path}', output_file_name_pdf)
 pdfkit.from_file(path, output_file_name_pdf, configuration=config)
 
 # remove non-pdf forms
 os.remove(output_file_name)
 os.remove(output_file_name_html)
 
-#open pdf
-
-subprocess.Popen([output_file_name_pdf],shell=True)
+# open pdf
+subprocess.Popen([output_file_name_pdf], shell=True)
