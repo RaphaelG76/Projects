@@ -1,4 +1,4 @@
-![report](https://github.com/RaphaelG76/Projects/assets/91983169/b21d80fd-b730-4585-a523-ea995b00f18d)# Projects
+# Projects
 My personal project portfolio.
 
 1) Instagram UI Clone
@@ -66,8 +66,9 @@ My personal project portfolio.
 
 8) ACA Error Reporter
    ![Detail](https://github.com/RaphaelG76/Projects/assets/91983169/884dab80-f478-489d-95b0-87a9591b1f52)
-   ![Error](https://github.com/RaphaelG76/Projects/assets/91983169/a00f4ace-d43a-4c6b-a3e1-e413696392a4)
-   ![report](https://github.com/RaphaelG76/Projects/assets/91983169/1fa677cd-2e80-4b3c-887b-0105ddf4ed42)
+   ![image](https://github.com/RaphaelG76/Projects/assets/91983169/7702f4c1-59bd-4c4e-ab6d-811147f666df)
+   ![report](https://github.com/RaphaelG76/Projects/assets/91983169/5f79181d-4a76-4bcd-90f3-7b07dd941242)
+
 
 
 
